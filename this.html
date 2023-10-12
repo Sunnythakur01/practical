@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    document.write(this);
+
+    function sum() {
+      var add = 2 + 2;
+      document.write("sum of two number is " + add);
+      documennt.write(this);
+    }
+    sum();
+
+    const sunny = {
+      name: "vinod ",
+      qualification: "MCS",
+      sum: function () {
+        var add = 2 + 2;
+        document.write("sum of two no is" + add);
+        document.write(this);
+        document.write(this.name)
+      }
+    }
+    sunny.sum();
+
+
+    let person = {
+      firstName: 'sunny',
+      lastName: 'thakur',
+      sayhello() {
+        document.write("hello ! i am " + this.firstName + "  i have a " + car.brand + " car");
+
+      }
+    };
+    let car = {
+      brand: 'i20',
+      modal: 'hundai',
+    }
+    person.sayhello();
+  </script>
+</body>
+
+</html>
